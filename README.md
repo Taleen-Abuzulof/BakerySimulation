@@ -95,7 +95,7 @@ During the run, statistics are logged to `stats.log` and the GUI module (if enab
 ### Demo Video
 
 <p align="center">
-  <video src="BakeryRecording.mp4" controls width="600">
+  <video src="Untitled video - Made with Clipchamp.mp4" controls width="600">
     Your browser does not support the video tag.
   </video>
 </p>
