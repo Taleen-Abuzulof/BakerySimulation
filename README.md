@@ -73,24 +73,6 @@ During the run, statistics are logged to `stats.log` and the GUI module (if enab
 └── stats.log           # Example output log
 ```
 
-├── src/
-│   ├── main.c              # Entry point: sets up IPC, forks processes
-│   ├── chef.c              # Chef process logic
-│   ├── baker.c             # Baker process logic
-│   ├── seller.c            # Seller process logic
-│   ├── customer.c          # Customer process logic
-│   ├── supply\_chain.c      # Supply-chain process logic
-│   ├── ipc\_utils.c         # Helpers: create/attach shared memory and semaphores
-│   ├── gui.c               # Optional OpenGL GUI display
-│   └── cleanup.c           # Resource cleanup on exit
-├── include/
-│   ├── config.h            # Simulation parameters
-│   └── struct.h            # Shared data structures
-├── Makefile
-├── README.md
-└── stats.log               # Example output log
-
-```
 
 ### Demo Video
 
