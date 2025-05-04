@@ -57,23 +57,48 @@ During the run, statistics are logged to `stats.log` and the GUI module (if enab
 ### Project Structure
 
 ```
-├── header.h            # all headers
-├── manager.c           # Entry point: sets up IPC, forks processes
+├── main.c              # Entry point: sets up IPC, forks processes
 ├── chef.c              # Chef process logic
 ├── baker.c             # Baker process logic
 ├── seller.c            # Seller process logic
 ├── customer.c          # Customer process logic
-├── supplier.c          # Supply-chain process logic
+├── supply_chain.c      # Supply-chain process logic
 ├── ipc_utils.c         # Helpers: create/attach shared memory and semaphores
-├── ipc_utils.h         # Haders for ipc_utilis.c
-├── bakery_gui.c        # OpenGL GUI display
-├── config.c            # loads configuration
-├── configuration       # Bakery Configuration
-├── config.h            # Header for config.c
+├── gui.c               # Optional OpenGL GUI display
+├── cleanup.c           # Resource cleanup on exit
+├── config.h            # Simulation parameters
 ├── struct.h            # Shared data structures
 ├── Makefile            # Build commands
-└── README.md           # Project documentation
+├── README.md           # Project documentation
+└── stats.log           # Example output log
 ```
+
+├── src/
+│   ├── main.c              # Entry point: sets up IPC, forks processes
+│   ├── chef.c              # Chef process logic
+│   ├── baker.c             # Baker process logic
+│   ├── seller.c            # Seller process logic
+│   ├── customer.c          # Customer process logic
+│   ├── supply\_chain.c      # Supply-chain process logic
+│   ├── ipc\_utils.c         # Helpers: create/attach shared memory and semaphores
+│   ├── gui.c               # Optional OpenGL GUI display
+│   └── cleanup.c           # Resource cleanup on exit
+├── include/
+│   ├── config.h            # Simulation parameters
+│   └── struct.h            # Shared data structures
+├── Makefile
+├── README.md
+└── stats.log               # Example output log
+
+```
+
+### Demo Video
+
+<p align="center">
+  <video src="BakeryRecording.mp4" controls width="600">
+    Your browser does not support the video tag.
+  </video>
+</p>
 
 ### Contributing
 
@@ -94,3 +119,5 @@ Taleen Abuzulof — Computer Engineering, Birzeit University
 ---
 
 Enjoy simulating your bakery! Feel free to open issues for bugs or feature requests.
+
+```
