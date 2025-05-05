@@ -77,9 +77,13 @@ During the run, statistics are logged to `stats.log` and the GUI module (if enab
 ### Demo Video
 
 <p align="center">
-  <video src="BakerySimulation/UntitledVideo.mp4" controls width="600">
-    Your browser does not support the video tag.
-  </video>
+  <a href="https://youtu.be/8dFYlfN2A9o" target="_blank">
+    <img
+      src="https://img.youtube.com/vi/8dFYlfN2A9o/maxresdefault.jpg"
+      alt="🎥 Bakery Simulation Demo"
+      width="600"
+    />
+  </a>
 </p>
 
 ### Contributing
